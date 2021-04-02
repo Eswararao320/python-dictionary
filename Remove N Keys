@@ -1,0 +1,17 @@
+alphabets = {
+    'a': 97,
+    'b': 98,
+    'c': 99,
+    'd': 100,
+    'e': 101,
+    'f': 102,
+    'g': 103,
+    'h': 104,
+}
+
+# Write your code here
+list_a=input().split()
+for i in range(len(list_a)):
+    if list_a[i] in alphabets:
+        del alphabets[list_a[i]]
+print(alphabets)    
