@@ -1,0 +1,10 @@
+students_dict = {
+    "Ram": "Cricket",
+    "Naresh": "Football",
+    "Vani": "Tennis",
+    "Rahim": "Cricket",
+    "Deepak": "Boxing"
+}
+
+del students_dict[input()]
+print(students_dict)
