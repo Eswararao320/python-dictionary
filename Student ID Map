@@ -1,0 +1,8 @@
+list_a=input().split(",")
+list_b=input().split(",")
+id_dict=dict()
+for i in range(len(list_b)):
+    id_dict[list_a[i]]=list_b[i]
+id_dict=sorted(id_dict.items(),key=lambda x:x[0])
+for key,val in id_dict:
+    print("{} {}".format(key,val))
