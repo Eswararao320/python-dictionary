@@ -1,0 +1,11 @@
+dict_1=dict()
+for i in range(2):
+    list_a=input().split()
+    list_b=list(map(int,input().split()))
+    for j in range(len(list_a)):
+        dict_1[list_a[j]]=list_b[j]
+dict_1=dict_1.items()        
+dict_1=sorted(dict_1)   
+print(dict_1)        
+        
+        
