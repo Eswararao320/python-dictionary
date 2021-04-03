@@ -1,0 +1,13 @@
+list1=input().split(",")
+dict1=dict()
+for item in list1:
+    pair=item.split(":")
+    key,value=pair[0],int(pair[1])
+    if key not in  dict1:
+        #dict1[key] ani ante key ki unna corresponding value vasundi
+        dict1[key]=value
+    else:
+        dict1[key]=dict1[key]+value
+dict1=dict1.items()
+dict1=sorted(dict1)
+print(dict1)        
